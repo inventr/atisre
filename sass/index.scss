@@ -1,0 +1,79 @@
+@import "vars";
+@import "mixins";
+@import "margenes";
+@import "vista1";
+@import "vista2";
+@import "vista3";
+@import "vista4";
+@import "contactenos";
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.fondo{
+  @include fondo(375px,"../img/banner.png",center,center,$blanco);
+}
+
+.fondo-v2{
+  @include fondo(375px,"../img/banner2.png",flex-start,flex-end,$blanco);
+  padding: 0px 0px 2em 7em;
+}
+
+.fondo-v3{
+  @include fondo(375px,"../img/banner3.png",flex-start,flex-end,$blanco);
+  padding: 0px 0px 2em 7em;
+}
+
+.fondo-v4{
+  @include fondo(375px,"../img/banner4.png",center,center,$blanco);
+}
+
+.in-fondo{
+  & > h2{
+    font-size: em(35px);
+    font-weight: bold;
+  }
+  & > p{
+    font-size: 1.425em;
+  }
+}
+
+.fondo1{
+  background-color: $fondo1;
+}
+
+.active{
+  color: $active!important;
+}
+
+.center{
+  text-align: center;
+}
+
+.img-logo{
+  position: absolute;
+  top: 1px;
+  max-height: 112px;
+  z-index: 11;
+}
+
+.columns{
+  padding-left: 2em;
+}
+
+.pre-footer{
+  background-color: $pre-footer;
+  height: em(51px);
+}
+
+.foot{
+  background-color: $footer;
+  color: $blanco;
+  @include textos(em(16px),300,$blanco,initial);
+}
+
+.foot-title{
+  font-weight: bold;
+  margin-bottom: 1em;
+}

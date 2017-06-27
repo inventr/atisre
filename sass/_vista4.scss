@@ -1,0 +1,51 @@
+.numbers{
+
+  & > *{
+    width: 100%;
+    margin-bottom: em(20px);
+    padding-top: .5em;
+    @include textos(em(30px),300,$blanco,initial);
+    height: 70px;
+  }
+}
+
+.num1{background-color: $num1;}
+.num2{background-color: $num2;}
+.num3{background-color: $num3;}
+.num4{background-color: $num4;}
+
+.business-card{
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, $blanco, #294d6c);
+  padding: 1em;
+  border-radius: 22px;
+}
+
+.left-business{
+  & > h5{
+    @include textos(em(25px),900!important,$business,initial);
+  }
+  & > p{
+    @include textos(em(20px),300!important,$business,initial);
+  }
+}
+
+.right-business{
+  @include textos(em(30px),500!important,$blanco,initial);
+}
+
+.next1{
+  @include navs(-52px,"../img/izq.png",165px);
+}
+
+.prev1{
+  @include navs(-52px,"../img/der.png",165px);
+}
+
+.title-banner{
+  @include textos(em(32px),bold!important,$blanco,initial);
+  background-color: #224767;
+  height: 52px;
+  padding-top: .15em;
+}
